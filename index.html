@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartX Pro - Landing Page</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif;}
+    body {background: #f8f9fb; color: #222; line-height: 1.6;}
+
+    header {text-align: center; padding: 2rem 1rem; background: linear-gradient(135deg,#111,#333); color: white;}
+    header h1 {font-size: 2.5rem; margin-bottom: .5rem;}
+    header p {font-size: 1.1rem; opacity: 0.8;}
+
+    .hero {display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem 1rem;}
+    .hero img {max-width: 300px; width: 80%; margin-bottom: 1.5rem; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));}
+    .hero h2 {font-size: 2rem; margin-bottom: .5rem;}
+    .hero p {max-width: 500px; margin-bottom: 1.5rem; color: #555;}
+    .hero button {background: #111; color: white; border: none; padding: .8rem 1.8rem; border-radius: 50px; font-size: 1rem; cursor: pointer; transition: .3s;}
+    .hero button:hover {background: #ff6b35;}
+
+    .features {display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1.5rem; padding: 2rem 1rem; max-width: 1000px; margin: auto;}
+    .feature-card {background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform .3s;}
+    .feature-card:hover {transform: translateY(-5px);}
+    .feature-card h3 {margin-bottom: .5rem;}
+    .feature-card p {color: #666; font-size: .9rem;}
+
+    .pricing {text-align: center; background: #fff; padding: 3rem 1rem; margin-top: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);}
+    .pricing h2 {font-size: 2rem; margin-bottom: .5rem;}
+    .price {font-size: 2.5rem; color: #ff6b35; margin: 1rem 0;}
+    .pricing button {background: #ff6b35; color: white; border: none; padding: .8rem 1.8rem; border-radius: 50px; font-size: 1rem; cursor: pointer; transition: .3s;}
+    .pricing button:hover {background: #111;}
+
+    footer {text-align: center; padding: 1rem; font-size: .85rem; color: #777;}
+
+    @media (min-width: 768px) {
+      .hero {flex-direction: row; justify-content: center; gap: 2rem; text-align: left;}
+      .hero img {margin-bottom: 0;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SmartX Pro</h1>
+    <p>The Future of Smartphones in Your Hand</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://i.ibb.co/3c3nVJY/smartphone.png" alt="Smartphone">
+    <div>
+      <h2>Experience the Next Level of Innovation</h2>
+      <p>With SmartX Pro, enjoy an ultra-fast processor, stunning display, and long-lasting battery. Designed to fit your lifestyle with elegance and power.</p>
+      <button onclick="scrollToPricing()">Buy Now</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>⚡ Superfast Performance</h3>
+      <p>Powered by the latest Octa-Core processor and 12GB RAM for seamless multitasking.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📸 108MP Camera</h3>
+      <p>Capture stunning photos and 8K videos with incredible clarity and color accuracy.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔋 All-day Battery</h3>
+      <p>5000mAh battery with fast charging keeps you going throughout the day.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🌈 Stunning Display</h3>
+      <p>6.7" AMOLED display with 120Hz refresh rate for smooth visuals and vibrant colors.</p>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Get Yours Today</h2>
+    <p class="price">₹49,999</p>
+    <button>Order Now</button>
+  </section>
+
+  <footer>
+    &copy; 2025 SmartX Inc. All Rights Reserved.
+  </footer>
+
+  <script>
+    function scrollToPricing() {
+      document.getElementById('pricing').scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>
